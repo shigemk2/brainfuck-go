@@ -18,6 +18,17 @@ func main() {
 			break
 		}
 		fmt.Print(string(buff[:c]))
+		switch string(buff[:c]) {
+		case "+":
+		case "-":
+		case "<":
+		case ">":
+		case "[":
+		case "]":
+		case ",":
+		case ".":
+		default:
+		}
 	}
 	input.Close()
 }
